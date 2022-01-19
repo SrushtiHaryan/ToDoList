@@ -1,0 +1,205 @@
+/* resetting the default website layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #c33764, #1d2671);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.text-area{
+
+    /* font-family: 'Concert One', cursive; */
+animation-name:animate;
+animation-duration:7s;
+animation-direction:alternate;
+animation-iteration-count: infinite;
+padding:40px;
+line-height:2;
+cursor:default;
+
+
+}
+@keyframes animate{
+
+    0%,100%{
+        text-shadow:0 0 30px yellow;
+        
+    }
+    25%{
+        text-shadow:0 0 30px orange;
+       
+    }
+    50%{
+        text-shadow:0 0 30px limegreen;
+       
+    }
+    75%{
+        text-shadow:0 0 30px blue;
+      
+    }
+
+}
+
+header {
+  font-size: 1.5rem;
+  
+}
+
+header,
+form {
+  min-height: 20vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  color: #c33764;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+form button:hover {
+  color: white;
+  background-color: #c33764;
+  transform: scale(1.1);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 50%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+/* .todo-item{
+    background-color:blue;
+} */
+
+.trash-btn,
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background-color: rgb(8, 212, 8);
+
+  transition: 0.2s;
+}
+.trash-btn {
+  background-color: rgb(238, 52, 52);
+
+  transition: 0.2s;
+}
+
+.complete-btn:hover i {
+  transform: scale(1.5);
+  /* border: solid 1px; */
+}
+.trash-btn:hover i {
+  transform: scale(1.3);
+  /* border: solid 1px; */
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+}
+
+.select{
+    margin: 1rem 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    background:#c33764;
+    color:white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size:2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    /* width:10rem; */
+}
+
+
+select:hover{
+    background:white;
+    color:#c33764;
+    
+}
+
+
+
+
+
+
+
